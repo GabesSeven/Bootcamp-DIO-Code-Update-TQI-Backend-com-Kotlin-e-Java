@@ -1,0 +1,46 @@
+// Criando e clonando branch específica de um repositórios
+git clone <url-do-repositório> --branch <nome-da-branch> --single-branch
+git clone <url-do-repositório> // clona apenas a branch principal (main)
+
+// .md é um linguagem de marcação, porém mais simples que o HTML, da para criar tabelas, fluxogramas, diagramas e muito mais...
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github
+
+// Desfazendo alterações em um arquivo. OBS. Descarta todas as alterações realizada localmente
+git status
+git restore <nome-do-arquivo>
+
+// Alterar mensagem do último commit
+git log // mostra histórico de commits
+git commit --amend -m"nova-mensagem"
+git commit --amend -m
+git log
+
+// Retornar o último commit para um commit anterior
+git reset --soft <hash-do-commit> // pega os arquivos referentes ao commit da hash e coloca na staging area (área de preparação)
+
+git reset --mixed <hash-do-commit> // default, pega os arquivos referentes ao commit da hash e coloca na área de trabalho, arquivos que o git ainda não conhece e devem ser adicionados a area depreparação (git add) 
+git add . 
+
+git reset --hard <hash-do-commit> //  apaga todas as alterações dos commits anteriores. pega os arquivos referentes ao commit da hash e os sobrescrevem.
+
+// Enviando e baixando alterações com o repositório remoto
+git push -u origin main // -u significa --set-upstream
+// trabalhando com branches
+git branch -v // exibe cada último commit de cada branch
+git merge <nome-da-branch-que-possui-commits-adiantados> // você tem que estar dentro da branch que tem commits atrasados, ele vai parear com a branch que possui commits a frente
+git branch -d <nomed-da-branch> // deletar branch
+git branch // lista todas branches
+git checkout -b <nome-da-bova-branch> // cria uma nova branch a partir do status de commit da atual
+git pull origin main // pode ter conflito que pode ser resolvido por configurações no terminal ou abrindo o arquivo e modificando manualmente
+
+// Trabalhando cm branches - comando últeis
+git pull = git fetch (baixa as alterações) + git merge (mescla as alterações)
+git fetch origin main // somente baixa as alterações, sem mesclar
+git diff main origin/main // ver as diferenças entre as duas branches
+git merge origin/main
+
+// Criar uma nova bransh sem querer que um modificação vá junto
+git stash // arquiva a modificação da branch atual
+git stash list // lista todos staches
+git stash pop // para retornar as alterações arquivadas retirando da pilha de stash
+git stash apply // para retornar as alterações arquivadas mantendo da pilha de stash

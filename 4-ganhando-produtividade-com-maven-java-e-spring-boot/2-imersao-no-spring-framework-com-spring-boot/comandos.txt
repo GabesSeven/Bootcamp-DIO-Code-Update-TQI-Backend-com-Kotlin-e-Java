@@ -1,0 +1,90 @@
+// Spring Framework:
+// Framework open source desenvolvido para a plataforma Java
+// baseado nos padrões de projetos INVERSÃO DE CONTROLE e INJEÇÃO DE Dependências
+// Sua estrutura é composta por módulos afins de reduzir a complexidade
+// no desenvolvimento aplicações simples ou corporativa.
+
+// Spring versus Java EE:
+// Java EE era muito complexo
+// A comunidade foi aderindo as mudanças que o Spring trouxe e paralelamente o Java EE teve de evoluir
+
+// Inversão de Controle ou IoC:
+// redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele
+// e delegando-o para um container
+// O principal propósito é minimizar o acoplamento do código
+
+// quando um container é instanciado ele obtém todas instâncias, referências, configurações e delega a administração, isso não fica mais a cargo do programador
+// antes o programador cria e instancia a aplicação
+// com spring o container automaticamente ja cria os objetos necessários, e o programador somente usa-os
+
+// Injeção de dependências:
+// padrão de desenvolvimento com a finalidade de 
+// manter baixo o nível de acoplamento entre módulos de um sistema
+// O container cria os objetos reais que injetam às interfaces apenas os objetos necessários
+
+// Beans
+// Objeto que é instanciado (criado), montado e 
+// gerenciado por um container através do princípio da inversão de controle
+
+// Scopes (Stand Alone e Web - HTTP)
+// Singleton tem um único objeto compartilhado por toda a aplicação (por todo escopo), quando for solicitado
+// Singleton o contêiner do Spring IoC define apenas uma instância de objeto
+// Prototype é criado uma nova instância a cada requisição de um objeto / referência ao contêiner
+// Prototype será criado um novo objeto a cada solicitação ao container, para não diferir mudanãs entre esses objetos
+// HTTP são Requisição (Request), Session (Sessão), Global
+// HTTP - Request um bean será criado para cada requisição HTTP que poderá ser transicionado por todo escopo, mas quando a requisição termina, o bean é destruído
+// HTTP - Session um bean será criado para cada sessão de usuário, manter estados de usuário (por exemplo, carrinho de compras) 
+// HTTP - Global ou Application Scope cria um bean para o ciclo de vida do contexto da aplicação, enquando a aplicação estiver no ar, esse bean estará disponível para utilização
+
+// Autowired:
+// uma anotação (indicação) onde deverá ocorrer uma injeção automática de dependência
+// em que momento, eu consigo delegar via classe ou interface, eu irei buscar através da minha injeção de dependências, dentro do contêiner qual dependência irei utilizar
+// byName: é buscado um método set que corresponde ao nome do Bean
+// byType: é considerado o tipo da classe para inclusão do Bean
+// byConstrutor: usamos o contrutor para incluir a dependência
+
+// Springboot
+// Enquando o SpringFramework é baseado no padrão de injeção de dependências, o Springboot foca na configuração automática
+
+// Antes do Springboot
+// Desafios com a configuração do projeto: dependência individual, verbosidade, imcompatibilidade de versões, complexidade de gestão. configurações complexas e repetitivas.
+// deixa pronto para o programador configurações de banco, segurança do sistema
+// dado que a maior parte das configurações necessárias para o início de um projeto são sempre as mesmas, por que não iniciar um projeto com todas estas configurações já definidas?
+
+// Starters
+// são descritores de dependência
+// Benefícios: coesão, versões compatíveis, otimização de tempo, configuração simples, foco no negócio
+
+// Listagem de alguns starters mais utilizados:
+// spring-boot-starter-data-jpa: integração ao banco de dados via JPA - Hibernate
+// spring-boot-starter-data-mongodb: integração ao banco de dados MongoDB
+// spring-boot-starter-web: inclusão de container Tomcat para aplicações REST
+// spring-boot-starter-web-services: webservices baseados na arquitetura SOAP
+
+// ORM - Object-Relational Mapping é um recurso para aproximar o paradigma da orientação a objetos ao contexto de banco de dados
+// uso de ORM é realizado através do mapeamento de objeto para uma tabela por uma biblioteca ou Framework
+
+// JPA é uma especificação baseada em interfaces que através de m framework realiza operações de persistência de objetos em Java
+// JPA - Implementações:
+//  - Hibernates, da Red Hat;
+//  - Eclipse Link, da Eclipse;
+//  - Top Link, da Oracle;
+//  - Open JPA, da Open JPA.
+
+// Mapeamento, aspectos das anotações de mapeamento do JPA: Identificação, Definição, Relacionamento, Herança, persistência
+
+// PostgreSQL:
+
+// sudo -u postgres psql
+// CREATE USER postgre WITH PASSWORD 'postgre';
+// CREATE DATABASE dio_db;
+// GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public to postgre;
+// GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public to postgre;
+// GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public to postgre;
+// \q
+
+
+// JPA Repository possui interfaces que automatizam tratamento de dados, por exemplo:
+// CRUD para usuário com métodos genéricos (save, findById, existsById, findAll, delete, count)
+// funções prontas para consultas no banco: "findDistinticByLastnameAndFirstname", "findByLastnameAndFirstname", "findByLastnameOrFirstname".
+// @Query permite realizar consultas de query manualmente.

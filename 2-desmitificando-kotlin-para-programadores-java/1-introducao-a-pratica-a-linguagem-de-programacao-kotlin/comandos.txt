@@ -1,0 +1,3 @@
+sudo apt install kotlin
+kotlinc funcoes-paramentros-varag.kts -include-runtime -d hello.jar
+java -jar hello.jar

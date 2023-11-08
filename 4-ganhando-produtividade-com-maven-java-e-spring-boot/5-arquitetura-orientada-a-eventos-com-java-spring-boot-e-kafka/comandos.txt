@@ -1,0 +1,23 @@
+https://hub.docker.com/r/bitnami/kafka
+
+--> criar o arquivo docker-compose.yml
+--> '-d' é para executar de forma assíncrona 
+docker-compose up -d
+
+--> IDE para o kafka
+https://www.kafkatool.com/download.html
+
+// para produtores e fila (REST através dos CONTROLLERS que são semelhantes as views)
+--> start.spring.io (Spring Initializr)
+ - Spring Web
+ - Spring for Apache Kafka
+ - Lombok
+ 
+// para o consumidores (MICROSERVICES)
+--> start.spring.io (Spring Initializr)
+ - Spring for Apache Kafka
+ - Lombok
+ 
+// Ao trabalhar com microserviços, não é compartilhado OBJETO, pois não podem ter acoplamento forte entre eles
+// o MICROSERVICE exige uma dependência chamada Jackson para trabalhar com objetos JSON
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind

@@ -1,0 +1,264 @@
+sudo apt install maven
+mvn --version
+mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
+
+
+// COMPILAR - COMPILE
+mvn compile // compila todos arquivos Java no projeto e salva na pasta "target/classes"
+
+
+// TESTE - TEST
+mvn test // realiza tests de validação por todos arquivos Java
+
+
+// EMPACOTAR - PACKAGE
+mvn package // empacota tods arquivos Java criando um .jar compilado
+
+
+// LIMPAR DIRETÓRIO DE TRABALHO - CLEAN
+mvn clean // limpar o diretório de trabalho, ou seja, a página "target"
+
+
+// EXISTEM VÁRIOS TIPOS DE ARQUITETURA DE BACKEND PARA O APACHE maven
+// Pesquisar na internet por "maven archetype list"
+// https://maven.apache.org/archetypes/index.html
+// No site MVNRepositpry pesquisar por "archetype" 
+// Github de terceiros 
+
+// POM - Project Object Model
+// Unidade fundamental de trabalho, formato XML, detalha o projeto e como construí-lo 
+// Maven sempre procura pelo pom.xml para realizar sua execução
+
+// POM - possíveis detalhes
+// - nome do projeto
+// - dependências
+// - módulos
+// - configurações de build
+// - detalhes do projeto (nome, descrição, licença, url)
+// - configurações de ambiente (repositório, tracking, profiles)
+
+// Por padrão, se não houver POM, ele busca no Super POM
+// https://maven.apache.org/ref/3.0.4/maven-model-builder/super-pom.html
+
+// Repositório é onde se busca os bibliotecas e plug-ins
+// Por padrão, o Super POM define como Repositório Remoto o "Mave Central"
+// pom.xml pode-se realizar configrações específica
+// settings.xml pode-se modificar configrações goblais da máquina
+
+// Repositório remoto é utilizado pelo Maven para buscar os artefatos, semelhante a uma estratégia de caching
+// Windows: %USERPROFILE%\.m2\repository
+// Linux $HOME./m2/repository
+
+// verificar dependências que não estão sendo usadas
+mvn dependecy:analyze
+
+// https://mvnrepository.com/
+// É possível adicionar dependências no arquivo pom.xml, por exemplo:
+// <dependecy>
+//     <groupId>org.hibernate</groupId>
+//     <artifactId>hibernate-search-orm</artifactId>
+//     <version>5.11.9.Final</version>
+// </dependecy>
+// No terminal: "mvn compile"
+
+// INSTALAR - INSTTALL
+mvn install // publica localmente seu projeto, envia para o repositório local
+// posteriormente você pode copiar:
+// <dependecy>
+//   <groupId>one.gabrielgroup</groupId>
+//   <artifactId>component</artifactId>
+//   <version>1.0.0-SNAPSHOT</version>
+// </dependecy>
+// e colocar dentro do arquivo pom.xml em outro projeot utilizando as tags <dependecy></dependecy>
+
+// Denpendências Diretas: declaradas no pom.xml
+// Denpendências Indiretas: denpendências obrigatória das denpendências declaradas no pom.xml
+
+// Classpath: referência que a aaplicação tem para o presente momento de execução.
+
+// Classpath Compile: é o default, disponível em todos os classpaths e realiza transitividade de pacotes (instala todos os pacotes de outra dependências) 
+// <dependecy>
+//   <groupId>one.gabrielgroup</groupId>
+//   <artifactId>component</artifactId>
+//   <version>1.0.0-SNAPSHOT</version>
+//   <scope>compile</scope>
+// </dependecy>
+
+
+// Classpath Provided: indica que a dependência será fornecida em tempo de execução por uma implementação na JDK ou via container
+// Exemplos> Servlet API, Java EE APIs. 
+// É adicionado no classpath usado para "compile" e "test" mas não runtime
+// É não transitivo  
+// <dependecy>
+//   <groupId>javax.servlet</groupId>
+//   <artifactId>javax.servlet-api</artifactId>
+//   <version>3.1.0</version>
+//   <scope>provided</scope>
+// </dependecy>
+
+
+// Classpath Runtime: indica que a dependência é necessária para a execução e não para compilação. 
+// Maven inclui no classpath dos escopos de runtime
+// É não transitivo  
+// <dependecy>
+//   <groupId>mysql</groupId>
+//   <artifactId>mysql-connector-java</artifactId>
+//   <version>6.0.6</version>
+//   <scope>runtime</scope>
+// </dependecy>
+
+
+// Classpath Test: disponível somente para compilação e execução de testes. 
+// É não transitivo  
+// <dependecy>
+//   <groupId>org.junit.jupter</groupId>
+//   <artifactId>junit-jupter-engine</artifactId>
+//   <version>${junit.jupter.version}</version>
+//   <scope>test</scope>
+// </dependecy>
+
+// Classpath System: similar ao escopo provided exceto por ser necessário prover o JAR explicitamente. 
+// É adicionado no classpath usado para "compile" e "test" mas não runtime
+// Funcionar apontando um localização para um JAR em algum lugar no sistema
+// É não transitivo  
+// <dependecy>
+//   <groupId>com.baeldung</groupId>
+//   <artifactId>custom-dependecy</artifactId>
+//   <version>1.3.2</version>
+//   <scope>system</scope>
+//   <systemPath>${project.basedir}/libs/custom-dependecy-1.3.2.jar</systemPath>
+// </dependecy>
+
+
+// Classpath Import: disponível apenas com uma dependência do tipo pom e com tag <dependecyManagement>
+// Indica a um processo para reutilizar dependências de um projeto
+// É não transitivo  
+// <dependecyManagement>
+//  <dependecies>
+//      <dependecy>
+//          <groupId>com.programmergirl</groupId>
+//          <artifactId>my-project</artifactId>
+//          <version>1.1</version>
+//          <type>pom</type>
+//          <scope>import</scope>
+//      </dependecy>
+//  </dependecies>
+// </dependecyManagement>
+
+// Analisar como MAVEN estpa construíndo cada dependência do projeto
+mvn dependecy:build-classpath -DincludeScope=compile
+mvn dependecy:build-classpath -DincludeScope=test
+mvn dependecy:build-classpath -DincludeScope=runtime
+
+// Dependências opcionais: são quando não são necessária para os projetos que irão reutilizar seu componente
+//     <dependecy>
+//         <groupId>com.google.code.gson</groupId>
+//         <artifactId>gson</artifactId>
+//         <version>2.8.8</version>
+//         <optional>true</optional>
+//     </dependecy>
+mvn install // publica localmente seu projeto, envia para o repositório local
+// Não constará mais dependências indiretas
+
+// Exclusion> quando você seta manualmente no seu próprio diretório para a dependência instanciada exluir algumas dependências próprias
+//     <dependecy>
+//         <groupId>com.gabrielGroup</groupId>
+//         <artifactId>component</artifactId>
+//         <version>1.0.0-SNAPSHOT</version>
+//         <exclusions>
+//              <exclusion>
+//                  <groupId>com.google.code.gson</groupId>
+//                  <artifactId>gson</artifactId>
+//              </exclusion>
+//         </exclusions>
+//     </dependecy>
+mvn install // publica localmente seu projeto, envia para o repositório local
+// Não constará mais dependências indiretas
+
+
+// Maven Build Lifecycle
+// conceito de ciclo de vida da contrução
+// conceito e os comandos da ferramenta
+// composto por 3 ciclos de vida
+// cada ciclo possui fases (Maven Phases)
+// cada fase possui objetivos (Maven Goals)
+
+// Default Lifecycle
+// principal ciclo
+// responsável pelo deploy local
+// composto por 23 fases, são comandos: validate, compile, test-compile, test, integration-test, package, install, deploy
+
+// Clean Lifecycle, prepara o projeto para publicação
+// ciclo intermediário
+// responsável pela limpeza do projeto
+// composto por 3 fases, são comandos: pre-clean, clean, post-clean
+
+// Site Lifecycle
+// ciclo final
+// responsável pela criação do site de documentação
+// composto por 4 fases, são comandos: pre-site, site, post-site, site-deploy 
+
+// Projetos multi-módulos
+// o que antes seriam projetos isolados de difícil manutenção
+// se tornam subprojetos / submódulos dentro de um projeot agregador
+
+// criando projeto agregador:
+mvn archetype:generate -DgroupId=one=one.digital.innovation -DartifactId=project-parent -Darchetype=maven-quick-start
+
+// posteriormente abrir o "pom.xml" projeto agregador e adicionar a tag "<packaging>pom</packaging>"
+<groupId>one.digital.innovation</groupId>
+<artifactId>project-parent</artifactId>
+<version>1.0-SNAPSHOT</version>
+<packaging>pom</packaging>
+
+// criar projeto agregado "core"
+mvn archetype:generate -DgroupId=one=one.digital.innovation -DartifactId=core -Darchetype=maven-quick-start -DinteractiveMode=false
+
+// criar projeto agregado "service"
+mvn archetype:generate -DgroupId=one=one.digital.innovation -DartifactId=service -Darchetype=maven-quick-start -DinteractiveMode=false
+
+// criar projeto agregado "controller"
+mvn archetype:generate -DgroupId=one=one.digital.innovation -DartifactId=controller -Darchetype=maven-quick-start -DinteractiveMode=false
+
+// Maven é uma arquitetura baseada em plugins, são exemplos: 
+// Plugins:
+// a maioria das funcionalidades são providas por plugins
+// estilo arquitetural para extensibilidade (criar seu plugins)
+// escrito prioritariamente em Java e disponibilizados como arquivos JAR
+// principais plugins: eclipse, jacoco, ear, war, compile, clean, chackstyle, javadoc
+// exemplo de uso: mvn [plugin-name]:[goal-name]
+
+// analisar opções presente no plugin dependency
+mvn dependency:help
+
+// configurações de um plugin é semelhante as da dependências
+// <build>
+//     <plugins>
+//         <plugin>
+//             <groupId>org.apache.mave.plugins</groupId>
+//             <artifactId>maven-compiler-plugin</artifactId>
+//             <version>3.8.0</version>
+//             <configuration>
+//                 <release>11</release>
+//             </configuration>
+//         </plugin>
+//     </plugins>
+// </build>
+
+// <build>
+//     <plugins>
+//         <plugin>
+//             <groupId>org.apache.mave.plugins</groupId>
+//             <artifactId>maven-javadoc-plugin</artifactId>
+//             <version>3.3.1</version>
+//         </plugin>
+//     </plugins>
+// </build>
+// executar plugin, esse plugin gera uma documentação do seu código em uma página HTML:
+mvn javadoc:javadoc
+
+
+
+// PARA APROFUNDAMENTO:
+http://maven.apache.org/guides/
+Apache Maven 3 Cookbook, Srirangan, 2011, Packt Publishing

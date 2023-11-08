@@ -1,0 +1,10 @@
+// Spring Web:
+//   - REST e RESTful;
+//   - Controllers;
+//   - Swagger;
+//   - Exception Handler.
+
+// API REST (Representational State Transfers) é como um guia de boas práticas.
+// RESTful é a capacidade de determinado sistema aplicar os princípios de REST.
+// Ao definir uma dependência para aplicação web, é inicializado um Tomcat na porta 8080 (http)
+// Como API disponibilizamos recursos/ serviços denominados CONTROLLERS e não páginas web
