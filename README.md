@@ -42,7 +42,7 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
   <li>Gerenciamento de dependências e build em Java com Maven;</li>
   <li>Imersão no Spring Framework com Spring Boot;</li>
   <li>Criando uma API REST documentada com Spring Web e Swagger;</li>
-  <li>Adicionando segurança a uma API REST com Spring Security ;</li>
+  <li>Adicionando segurança a uma API REST com Spring Security;</li>
   <li>Arquitetura orientada a eventos com Java, Spring Boot e Kafka;</li>
   <li>Explorando padrões de projetos na prática.</li>
 </ul>
@@ -57,10 +57,34 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 
 ## Tecnologias utilizadas 👩🏻‍💻
 
+![GIT](https://img.shields.io/badge/Java-F05032?logo=git&logoColor=white&style=for-the-badge) &nbsp;
+
+![GITHUB](https://img.shields.io/badge/github-181717?logo=git&logoColor=white&style=for-the-badge) &nbsp;
+
+![KOTLIN](https://img.shields.io/badge/kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge) &nbsp;
+
 ![JAVA](https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=white&style=for-the-badge) &nbsp;
 
+![APACHE MAVEN](https://img.shields.io/badge/apachemaven-C71A36?logo=apachemaven&logoColor=white&style=for-the-badge) &nbsp;
+
+![APACHE KAFKA](https://img.shields.io/badge/apachekafka-231F20?logo=apachekafka&logoColor=white&style=for-the-badge) &nbsp;
+
+![GRADLE](https://img.shields.io/badge/gradle-02303A?logo=gradle&logoColor=white&style=for-the-badge) &nbsp;
+
 ![SPRING](https://img.shields.io/badge/spring-6DB33F?logo=spring&logoColor=white&style=for-the-badge) &nbsp;
+
+![SPRING BOOT](https://img.shields.io/badge/springboot-6DB33F?logo=springboot&logoColor=white&style=for-the-badge) &nbsp;
+
+![SPRING SECURITY](https://img.shields.io/badge/springsecurity-6DB33F?logo=springsecurity&logoColor=white&style=for-the-badge) &nbsp;
+
+![SWAGGER](https://img.shields.io/badge/swagger-85EA2D?logo=swagger&logoColor=white&style=for-the-badge) &nbsp;
+
+![H2 DATABASE](https://img.shields.io/badge/databricks-FF3621?logo=databricks&logoColor=white&style=for-the-badge) &nbsp;
 
 ![MONGODB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white&style=for-the-badge) &nbsp;
 
 ![MYSQL](https://img.shields.io/badge/MySQL-20232A?logo=mysql&logoColor=white&style=for-the-badge) &nbsp;
+
+![HIBERNATE](https://img.shields.io/badge/hibernate-59666C?logo=hibernate&logoColor=white&style=for-the-badge) &nbsp;
+
+![FLYWAY](https://img.shields.io/badge/flyway-CC0200?logo=flyway&logoColor=white&style=for-the-badge) &nbsp;
