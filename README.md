@@ -79,7 +79,7 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 
 ![SWAGGER](https://img.shields.io/badge/swagger-85EA2D?logo=swagger&logoColor=white&style=for-the-badge) &nbsp;
 
-![H2 DATABASE](https://img.shields.io/badge/databricks-FF3621?logo=databricks&logoColor=white&style=for-the-badge) &nbsp;
+![H2 DATABASE](https://img.shields.io/badge/H2DATABASE-1316BF?logo=databricks&logoColor=white&style=for-the-badge) &nbsp;
 
 ![MONGODB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white&style=for-the-badge) &nbsp;
 
