@@ -99,7 +99,7 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 <hr>
 <br>
 
-## 🧑‍💻 Developer
+## Developer 🧑‍💻 
 
 | [<img src="https://avatars.githubusercontent.com/u/37443722?v=4" width=115><br><sub>Gabriel Ferreira</sub>](https://github.com/GabesSeven)
 | :---: 
