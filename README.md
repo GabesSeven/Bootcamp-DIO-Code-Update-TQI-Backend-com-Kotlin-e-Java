@@ -1,8 +1,10 @@
-# Bootcamp-DIO-Code-Update-TQI-Backend-com-Kotlin-e-Java
+# Bootcamp DIO: Code Update TQI Backend com Kotlin e Java 
+
 Treinamento com duração de 68 horas proporcionado pela Digital Innovation One (DIO). O objetivo é aprender mais sobre desenvolvimento backend voltado as linguagens Kotlin e Java, Spring Framework e diversas outras tecnologias que auxiliam na contrução e execução dos diversos modelos arquiteturas e transmissão de dados.
 
-
-# Bootcamp DIO: Code Update TQI Backend com Kotlin e Java 
+<br>
+<hr>
+<br>
 
 ## Conteúdo 🎯
 
@@ -54,6 +56,9 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 </ul>
 
 <br>
+<hr>
+<br>
+
 
 ## Tecnologias utilizadas 👩🏻‍💻
 
@@ -88,3 +93,13 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 ![HIBERNATE](https://img.shields.io/badge/hibernate-59666C?logo=hibernate&logoColor=white&style=for-the-badge) &nbsp;
 
 ![FLYWAY](https://img.shields.io/badge/flyway-CC0200?logo=flyway&logoColor=white&style=for-the-badge) &nbsp;
+
+
+<br>
+<hr>
+<br>
+
+## 🧑‍💻 Developer
+
+| [<img src="https://avatars.githubusercontent.com/u/37443722?v=4" width=115><br><sub>Gabriel Ferreira</sub>](https://github.com/GabesSeven)
+| :---: 
