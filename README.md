@@ -10,7 +10,7 @@
 <hr>
 <br>
 
-## Projeto Prático de Application Programming Interface (API) com Spring Boot, Gradle e Kotlin. 💻
+## Projeto Prático de Application Programming Interface (API) com Spring Boot, Gradle, Kotlin e Banco de Dados H2. 💻
 
 <br><br>
 <p style="text-align: justify;">
@@ -87,7 +87,7 @@
 <hr>
 <br>
 
-## Tecnologias utilizadas 👩🏻‍💻
+## Tecnologias Utilizadas 👩🏻‍💻
 
 <br><br>
 
