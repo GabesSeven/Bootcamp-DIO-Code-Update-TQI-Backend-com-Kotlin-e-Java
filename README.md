@@ -3,7 +3,7 @@
 <br><br>
 
 <p style="text-align: justify;">
-  Treinamento com duração de 68 horas proporcionado pela [<strong><em>Digital Innovation One</em></strong> (<strong><em>DIO</em></strong>)](https://www.dio.me/en) e pelo [Banco Santander](https://www.santander.com.br/). O objetivo é aprender mais sobre desenvolvimento backend voltado a <strong><em>Kotlin</em></strong> e <strong><em>Java</em></strong>, <strong><em>Spring Framework</em></strong>, além de diversas <strong>outras tecnologias</strong> e <strong>arquiteturas</strong>.
+  Treinamento com duração de 68 horas proporcionado pela <a href='https://www.dio.me/en'><strong><em>Digital Innovation One</em></strong> (<strong><em>DIO</em></strong>)</a> e pelo <a href='https://www.santander.com.br/'>Banco Santander</a>. O objetivo é aprender mais sobre desenvolvimento backend voltado a <strong><em>Kotlin</em></strong> e <strong><em>Java</em></strong>, <strong><em>Spring Framework</em></strong>, além de diversas <strong>outras tecnologias</strong> e <strong>arquiteturas</strong>.
 </p>
 
 <br>
