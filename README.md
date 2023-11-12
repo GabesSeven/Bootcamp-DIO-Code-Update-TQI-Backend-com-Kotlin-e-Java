@@ -10,7 +10,7 @@
 <hr>
 <br>
 
-## Projeto Prático de API com Spring Boot, Gradle e Kotlin. 💻
+## Projeto Prático de Application Programming Interface (API) com Spring Boot, Gradle e Kotlin. 💻
 
 <br><br>
 <p style="text-align: justify;">
