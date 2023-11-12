@@ -3,7 +3,7 @@
 <br><br>
 
 <p style="text-align: justify;">
-  Treinamento com duração de 68 horas proporcionado pela Digital Innovation One (DIO). O objetivo é aprender mais sobre desenvolvimento backend voltado a Kotlin e Java, Spring Framework, além de diversas outras tecnologias e arquiteturas.
+  Treinamento com duração de 68 horas proporcionado pela <strong><em>Digital Innovation One</em></strong> (<strong><em>DIO</em></strong>). O objetivo é aprender mais sobre desenvolvimento backend voltado a <strong><em>Kotlin</em></strong> e <strong><em>Java</em></strong>, <strong><em>Spring Framework</em></strong>, além de diversas <strong>outras tecnologias</strong> e <strong>arquiteturas</strong>.
 </p>
 
 <br>
@@ -14,11 +14,11 @@
 
 <br><br>
 <p style="text-align: justify;">
-  </strong>API REST Spring Boot</strong> e <strong>Kotlin</strong> que simula um </strong>sistema de análise e solicitação de crédito</strong>. O objetivo é a empresa fornecer gerenciamento simples de Crédito (<em>Credit</em>) para seus <em>Clientes</em> (<em>Customers</em>).
-</p>
-<br><br>
+  <strong><em>Application Programming Interface</em></strong> (<strong><em>API</em></strong>) <em><strong> Full Representational State Transfer</strong></em> (<strong><em>RESTful</strong></em>) utilizando <strong><em>Spring Boot</em></strong> e <strong><em>Kotlin</em></strong> que simula um </strong>sistema de análise e solicitação de crédito</strong>. O objetivo é a empresa fornecer gerenciamento simples de <strong>Crédito</strong> (<em><strong>Credit</em>strong></em>) para seus <em><strong>Clientes</em></strong> (<em><strong>Customers</strong></em>). <br>
+<br>
+Link para <strong><em>Application Programming Interface (API)</em></strong> [Credit Application System](https://github.com/GabesSeven/credit-application-system/)
 
-[Credit Application System]([https://code.visualstudio.com](https://github.com/GabesSeven/credit-application-system)/)
+</p>
 
 <br>
 <hr>
@@ -32,9 +32,9 @@
 <p style="text-align: justify;">
 <ul>
   <li>Conceitos de metodogias ágeis e tradicionais;</li>
-  <li>Versionamento e diversos recursos do Git e Github via linha de comando;</li>
-  <li>Contrução de arquivos markdown (.md);</li>
-  <li>Contribuindo para um projeto open source através do Fork e Pull Request.</li>
+  <li>Versionamento e diversos recursos do <em>Git</em> e <em>Github</em> via linha de comando;</li>
+  <li>Contrução de arquivos <em>markdown</em> (.md);</li>
+  <li>Contribuindo para um projeto open source através do <em>Fork</em> e <em>Pull Request</em>.</li>
 </ul>
 <p/>
   
@@ -50,10 +50,10 @@
 ### Módulo 3: Explorando padrões de Projetos na Prática com Kotlin
 <p style="text-align: justify;">
 <ul>
-  <li>Singleton;</li>
-  <li>Builder;</li>
-  <li>Adapter;</li>
-  <li>Extension function;</li>
+  <li><em>Singleton</em>;</li>
+  <li><em>Builder</em>;</li>
+  <li><em>Adapter</em>;</li>
+  <li><em>Extension function</em>;</li>
   <li>Processamento paralelo / assíncrono.</li>
 </ul>
 
@@ -68,11 +68,11 @@
 ### Módulo 5: Ganhando Produtividade com Java e Spring Boot
 <p style="text-align: justify;">
 <ul>
-  <li>Gerenciamento de dependências e build em Java com Maven;</li>
-  <li>Imersão no Spring Framework com Spring Boot;</li>
-  <li>Criando uma API REST documentada com Spring Web e Swagger;</li>
-  <li>Adicionando segurança a uma API REST com Spring Security;</li>
-  <li>Arquitetura orientada a eventos com Java, Spring Boot e Kafka;</li>
+  <li>Gerenciamento de dependências e <em>build</em> em <em>Java</em> com <em>Apache Maven</em>;</li>
+  <li>Imersão no <em>Spring Framework</em> com <em>Spring Boot</li>em>;</li>
+  <li>Criando uma <em>API REST</em> documentada com <em>Spring Web</em> e <em>Swagger</em>;</li>
+  <li>Adicionando segurança a uma <em>API REST</em> com <em>Spring Security</em>;</li>
+  <li>Arquitetura orientada a eventos com <em>Java</em>, <em>Spring Boot</em> e <em>Kafka</em>;</li>
   <li>Explorando padrões de projetos na prática.</li>
 </ul>
 <p/>
@@ -80,8 +80,8 @@
 ### Módulo 6: Modernizando seu Backend com Kotlin e Spring Boot
 <p style="text-align: justify;">
 <ul>
-  <li>Contextualizando o desenvolvimento web com Spring Boot 3;</li>
-  <li>Documentando e testando sua API Rest com Kotlin.</li>
+  <li>Contextualizando o desenvolvimento <em>web</em> com <em>Spring Boot</em> 3;</li>
+  <li>Documentando e testando sua <em>API REST</em> com <em>Kotlin</em>.</li>
 </ul>
 <p/>
   
