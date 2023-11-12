@@ -2,7 +2,9 @@
 
 <br><br>
 
-Treinamento com duração de 68 horas proporcionado pela Digital Innovation One (DIO). O objetivo é aprender mais sobre desenvolvimento backend voltado a Kotlin e Java, Spring Framework, além de diversas outras tecnologias e arquiteturas.
+<p style="text-align: justify;">
+  Treinamento com duração de 68 horas proporcionado pela Digital Innovation One (DIO). O objetivo é aprender mais sobre desenvolvimento backend voltado a Kotlin e Java, Spring Framework, além de diversas outras tecnologias e arquiteturas.
+</p>
 
 <br>
 <hr>
@@ -11,9 +13,9 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 ## Projeto Prático de API com Spring Boot, Gradle e Kotlin. 💻
 
 <br><br>
-
-</strong>API REST Spring Boot</strong> e <strong>Kotlin</strong> que simula um </strong>sistema de análise e solicitação de crédito</strong>. O objetivo é a empresa fornecer gerenciamento simples de Crédito (<em>Credit</em>) para seus <em>Clientes</em> (<em>Customers</em>).
-
+<p style="text-align: justify;">
+  </strong>API REST Spring Boot</strong> e <strong>Kotlin</strong> que simula um </strong>sistema de análise e solicitação de crédito</strong>. O objetivo é a empresa fornecer gerenciamento simples de Crédito (<em>Credit</em>) para seus <em>Clientes</em> (<em>Customers</em>).
+</p>
 <br><br>
 
 [Credit Application System]([https://code.visualstudio.com](https://github.com/GabesSeven/credit-application-system)/)
@@ -27,14 +29,17 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 <br><br>
 
 ### Módulo 1: Princípios de Desenvolvimento Ágil e Colaborativo
+<p style="text-align: justify;">
 <ul>
   <li>Conceitos de metodogias ágeis e tradicionais;</li>
   <li>Versionamento e diversos recursos do Git e Github via linha de comando;</li>
   <li>Contrução de arquivos markdown (.md);</li>
   <li>Contribuindo para um projeto open source através do Fork e Pull Request.</li>
 </ul>
-
+<p/>
+  
 ### Módulo 2: Desmitificando Kotlin para Programadores Java
+<p style="text-align: justify;">
 <ul>
   <li>Estrutura de controle de fluxo e coleções;</li>
   <li>Orientação a objetos e tipos de classes;</li>
@@ -43,6 +48,7 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 </ul>
 
 ### Módulo 3: Explorando padrões de Projetos na Prática com Kotlin
+<p style="text-align: justify;">
 <ul>
   <li>Singleton;</li>
   <li>Builder;</li>
@@ -52,12 +58,15 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 </ul>
 
 ### Módulo 4: Trabalhando com Banco de Dados SQL e NoSQL
+<p style="text-align: justify;">
 <ul>
   <li>Banco de dados relacionais;</li>
   <li>Banco de dados não relacionais.</li>
 </ul>
+<p/>
 
 ### Módulo 5: Ganhando Produtividade com Java e Spring Boot
+<p style="text-align: justify;">
 <ul>
   <li>Gerenciamento de dependências e build em Java com Maven;</li>
   <li>Imersão no Spring Framework com Spring Boot;</li>
@@ -66,13 +75,16 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
   <li>Arquitetura orientada a eventos com Java, Spring Boot e Kafka;</li>
   <li>Explorando padrões de projetos na prática.</li>
 </ul>
+<p/>
 
 ### Módulo 6: Modernizando seu Backend com Kotlin e Spring Boot
+<p style="text-align: justify;">
 <ul>
   <li>Contextualizando o desenvolvimento web com Spring Boot 3;</li>
   <li>Documentando e testando sua API Rest com Kotlin.</li>
 </ul>
-
+<p/>
+  
 <br>
 <hr>
 <br>
@@ -120,7 +132,7 @@ Treinamento com duração de 68 horas proporcionado pela Digital Innovation One 
 
 ## Visão Geral sobre Conteúdo Absorvido 📜
 <br><br>
-
+<p style="text-align: justify;">
 <strong><em>Spring Framework</em></strong> é um <strong>ecossistema de desenvolvimento</strong> para <strong>facilitar</strong> a <strong>criação de aplicações</strong> <strong><em>Java</em></strong> e <strong><em>Kotlin</em></strong> utilizando diversos <strong>módulos independentes</strong>. Como consequência, me aprofundei em <strong>estruturas internas</strong> do <strong><em>Java</em></strong> como:
 <ul>
 <li><strong><em>Java Persistence Application Programming Interface</em></strong> (<strong><em>JPA</em></strong>); </li>
@@ -231,7 +243,7 @@ Em uma pasta separada denominada “<strong><em>entity</em></strong>”, <strong
 <strong></em>Spring Data JPA</em></strong> é uma framework relacionada ao projeto <strong></em>Spring Data</em></strong> e possui como finalidade tornar a <strong>integração</strong> de aplicações <strong></em>Spring</em></strong> com a <strong></em>JPA</em></strong> cujo <strong>escopo envolve gerenciar a implementação</strong> do <strong></em>ORM</em></strong> a serem <strong>implementados</strong>, ou seja, <strong>camada intermediária</strong> ao <strong></em>JDBC</em></strong>, parte do contêiner <strong></em>Java EE</em></strong> que <strong>gerencia as conexões com o banco de dados</strong>. <strong></em>ORM</em></strong>, técnica para aproximar o paradigma de <strong>POO</strong> ao paradigma do <strong></em>RDBMS</em></strong>.
 <br>
 <strong><em>implementa</em></strong> a especificação <strong></em>JPA</em></strong> e <strong></em>Flyway</em></strong> é uma ferramenta responsável por <strong>versionar a base de dados</strong>. Permite <strong>sincronizar</strong> o <strong>banco de dados</strong> com a <strong>versão da aplicação</strong>, <strong>analisar registros de logs</strong> (<strong></em>scripts Structured Query Language</em></strong> - <strong></em>SQL</em></strong>) <strong>executados ou não</strong>, <strong>automatização</strong> com <strong></em>scripts</em></strong>, <strong>criar</strong> novo <strong>banco de dados</strong>, executar <strong></em>rollback</em></strong> de <strong>mudanças</strong> no <strong>banco de dados</strong>.
-
+<p/>
 
 <br>
 <hr>
