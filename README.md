@@ -16,8 +16,9 @@
 <p style="text-align: justify;">
   <strong><em>Application Programming Interface</em></strong> (<strong><em>API</em></strong>) <em><strong> Full Representational State Transfer</strong></em> (<strong><em>RESTful</strong></em>) utilizando <strong><em>Spring Boot</em></strong> e <strong><em>Kotlin</em></strong> que simula um </strong>sistema de análise e solicitação de crédito</strong>. O objetivo é a empresa fornecer gerenciamento simples de <strong>Crédito</strong> (<em><strong>Credit</strong></em>) para seus <em><strong>Clientes</em></strong> (<em><strong>Customers</strong></em>). <br>
 <br>
-Link para <strong><em>Application Programming Interface (API)</em></strong> [Credit Application System](https://github.com/GabesSeven/credit-application-system/)
-
+</p>
+<p style="text-align: center;">
+    <a href='https://github.com/GabesSeven/credit-application-system/'><strong><em>Credit Application System</em></strong></a>
 </p>
 
 <br>
