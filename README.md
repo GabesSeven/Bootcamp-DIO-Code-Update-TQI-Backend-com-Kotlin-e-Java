@@ -67,7 +67,7 @@
 <p style="text-align: justify;">
 <ul>
   <li>Gerenciamento de dependências e <em>build</em> em <em>Java</em> com <em>Apache Maven</em>;</li>
-  <li>Imersão no <em>Spring Framework</em> com <em>Spring Boot</li>em>;</li>
+  <li>Imersão no <em>Spring Framework</em> com <em>Spring Boot</em>;</li>
   <li>Criando uma <em>API REST</em> documentada com <em>Spring Web</em> e <em>Swagger</em>;</li>
   <li>Adicionando segurança a uma <em>API REST</em> com <em>Spring Security</em>;</li>
   <li>Arquitetura orientada a eventos com <em>Java</em>, <em>Spring Boot</em> e <em>Kafka</em>;</li>
